@@ -1,0 +1,19 @@
+{
+  "name": "fritznelfranck_3_15072021",
+  "version": "1.0.0",
+  "description": "Projet Omyfood",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fkfritz/FritznelFranck_3_15072021.git"
+  },
+  "author": "Fritznel Franck",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fkfritz/FritznelFranck_3_15072021/issues"
+  },
+  "homepage": "https://github.com/fkfritz/FritznelFranck_3_15072021#readme"
+}
