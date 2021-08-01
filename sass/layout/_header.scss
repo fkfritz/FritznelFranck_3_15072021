@@ -1,0 +1,17 @@
+/*----Style sur le header-----*/
+
+.header{
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__link-back{
+        position: absolute;
+        left: 45px;
+        display: none;
+        &--visible{
+            display: inline-block;
+        }
+    }
+}

@@ -1,3 +1,1 @@
-
-
-/*# sourceMappingURL=style.css.map */
+*,*::after,*::before{margin:0;padding:0;box-sizing:inherit}body{box-sizing:border-box}.header{height:60px;background-color:#fff;display:flex;justify-content:center;align-items:center}.header__link-back{position:absolute;left:45px;display:none}.header__link-back--visible{display:inline-block}/*# sourceMappingURL=style.css.map */
