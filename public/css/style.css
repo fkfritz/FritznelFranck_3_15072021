@@ -131,6 +131,71 @@ body {
   color: #9356dc;
 }
 
+/*-----Style sur le bloc restaurant------*/
+#restaurant-box {
+  background-color: #f2f2f2;
+  padding: 20px 15px;
+}
+#restaurant-box .restaurant {
+  margin: 20px 0;
+  height: 250px;
+  width: auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 3px 1px #fff;
+  box-shadow: 0px 0px 3px 1px #fff;
+  border-radius: 20px;
+  position: relative;
+}
+#restaurant-box .restaurant figure {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  position: relative;
+}
+#restaurant-box .restaurant figure figcaption {
+  height: 30%;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+#restaurant-box .restaurant figure figcaption h4 {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+#restaurant-box .restaurant figure figcaption .far {
+  font-size: 1.7rem;
+}
+#restaurant-box .restaurant figure:hover {
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+  -webkit-box-shadow: 0px 0px 3px 1px #fff;
+  box-shadow: 0px 0px 4px 3px #99e2d0;
+}
+#restaurant-box .restaurant__img {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center -50px;
+}
+#restaurant-box .restaurant__img--position {
+  width: 100%;
+  height: 70%;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+  object-position: center -155px;
+}
+#restaurant-box .restaurant__new {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  padding: 8px;
+  background-color: #99e2d0;
+  font-weight: bold;
+  color: #2c9c81;
+  font-size: 0.8rem;
+}
+
 .btn {
   margin: 20px 0;
   padding: 15px 20px;

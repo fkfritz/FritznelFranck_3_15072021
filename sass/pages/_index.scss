@@ -96,3 +96,69 @@
     }
   }
 }
+
+/*-----Style sur le bloc restaurant------*/
+
+#restaurant-box {
+    background-color: $bcg-color;
+    padding: 20px 15px;  
+    & .restaurant {
+    margin: 20px 0;
+    height: 250px;
+    width: auto;
+    background-color: $color-white;
+    -webkit-box-shadow: 0px 0px 3px 1px $color-white;
+    box-shadow: 0px 0px 3px 1px $color-white;
+    border-radius: 20px;
+    position: relative;
+    & figure {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 20px;
+      position: relative; 
+      & figcaption {
+        height: 30%;
+        padding-right: 20px;
+        padding-left: 20px;
+        & h4 {
+          margin-top: 15px;
+          margin-bottom: 5px;
+        }    
+        & .far {
+          font-size: 1.7rem;
+        }
+      }    
+      &:hover {
+        transform: scale(1);
+        transition: 0.3s ease-in-out;
+        -webkit-box-shadow: 0px 0px 3px 1px $color-white;
+        box-shadow: 0px 0px 4px 3px $tertiary-color;
+      }
+    }
+    &__img{
+        width: 100%;
+        height: 70%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        object-position: center -50px;
+        &--position{
+            width: 100%;
+        height: 70%;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover;
+        object-position: center -155px;
+        }
+    }
+    &__new{
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        padding: 8px;
+        background-color: $tertiary-color;
+        font-weight: bold;
+        color: #2c9c81;
+        font-size: 0.8rem;
+    }   
+  }
+}
