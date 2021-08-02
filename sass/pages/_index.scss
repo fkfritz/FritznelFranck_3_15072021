@@ -26,3 +26,22 @@
     }
   }
 }
+
+/*-----Style sur le bloc presentation------*/
+.presentation {
+    padding: 25px 0;
+    @include centering-elt;    
+    flex-direction: column;
+    background-color: $bcg-color;
+    & h1 {
+      width: 80%;
+      margin: 5px 0;
+      text-align: center;
+    }
+    & p {
+      width: 80%;
+      margin: 5px 0;
+      text-align: center;
+      font-size: 1.06rem;
+    }
+  }
