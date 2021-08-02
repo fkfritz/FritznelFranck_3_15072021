@@ -1,28 +1,28 @@
 /*-----Style sur le bloc localisation------*/
-.location{
-    height: 50px;
+.location {
+  height: 50px;
+  background-color: $location-color;
+  @include centering-elt;
+  border-top: 4px solid #dadada;
+  & input {
     background-color: $location-color;
-    @include centering-elt;
-    border-top: 4px solid #dadada;
-    & input{
-        background-color: $location-color;
-        border: none;
-        text-align: center;
-        font-size: 1rem;
-        &:focus {
-            outline: none;
-            border: 2px solid $primary-color;
-            height: 30px;
-            border-radius: 10px;
-            &::placeholder{
-              opacity: 0;
-            }
-          }
-        &::placeholder{
-            color: $color-black;
-            text-align: center;            
-            font-family: "Roboto", sans-serif;
-            font-weight: bold;
-        }
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    &:focus {
+      outline: none;
+      border: 2px solid $primary-color;
+      height: 30px;
+      border-radius: 10px;
+      &::placeholder {
+        opacity: 0;
+      }
     }
+    &::placeholder {
+      color: $color-black;
+      text-align: center;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+    }
+  }
 }
