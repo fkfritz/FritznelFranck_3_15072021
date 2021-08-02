@@ -1,0 +1,13 @@
+.heart{
+    position: absolute;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    left: 280px;
+    bottom: 20px;
+    & .far{
+        font-size: 2rem;
+    }
+    @include heart
+} 

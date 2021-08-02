@@ -11,6 +11,17 @@ body {
   box-sizing: border-box;
 }
 
+@keyframes heart-full {
+  0% {
+    transform: scale(0);
+  }
+  90% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*----Style sur le header-----*/
 .header {
   height: 60px;
@@ -26,6 +37,98 @@ body {
 }
 .header__link-back--visible {
   display: inline-block;
+}
+
+/*------- Style sur les composants -----*/
+.btn {
+  margin: 20px 0;
+  padding: 15px 20px;
+  color: #fff;
+  background: linear-gradient(0deg, #9356dc, #ff79da);
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  border-radius: 30px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(#d7c0f2, #ff79da);
+  opacity: 0;
+  z-index: -1;
+  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.3);
+  transition: opacity 250ms;
+}
+
+.heart {
+  position: absolute;
+  height: auto;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  left: 280px;
+  bottom: 20px;
+}
+.heart .far {
+  font-size: 2rem;
+}
+.heart__visible {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+.heart__visible:hover + .heart__invisible {
+  animation: heart-full 0.5s linear both;
+  display: inline-block;
+  cursor: pointer;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+  background-repeat: no-repeat;
+}
+.heart__visible:active + .heart__invisible {
+  animation: heart-full 0.5s linear both;
+  display: inline-block;
+  cursor: pointer;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: bold;
+}
+.heart__visible:hover {
+  cursor: pointer;
+  background-color: #9356dc;
+  background-image: linear-gradient(15deg, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart__invisible {
+  position: relative;
+  color: #0000;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  left: -32px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  transform-origin: 50% bottom;
+  transform: scale(1);
+  transition: transform 0.5s cubic-bezier(0.43, 0.21, 1, 0.45);
 }
 
 /*-----Style sur le bloc localisation------*/
@@ -162,9 +265,6 @@ body {
   margin-top: 15px;
   margin-bottom: 5px;
 }
-#restaurant-box .restaurant figure figcaption .far {
-  font-size: 1.7rem;
-}
 #restaurant-box .restaurant figure:hover {
   transform: scale(1);
   transition: 0.3s ease-in-out;
@@ -194,33 +294,6 @@ body {
   font-weight: bold;
   color: #2c9c81;
   font-size: 0.8rem;
-}
-
-.btn {
-  margin: 20px 0;
-  padding: 15px 20px;
-  color: #fff;
-  background: linear-gradient(0deg, #9356dc, #ff79da);
-  border-radius: 30px;
-  position: relative;
-  z-index: 1;
-}
-.btn:hover::after {
-  opacity: 1;
-}
-.btn::after {
-  content: "";
-  position: absolute;
-  border-radius: 30px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(#d7c0f2, #ff79da);
-  opacity: 0;
-  z-index: -1;
-  box-shadow: 0px 0px 4px 3px rgba(0, 0, 0, 0.3);
-  transition: opacity 250ms;
 }
 
 /*# sourceMappingURL=style.css.map */

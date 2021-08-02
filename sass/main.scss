@@ -2,9 +2,12 @@
 @import "./utils/mixins";
 
 @import "./base/base";
+@import "./base/animations";
 
 @import "./layout/header";
 
+@import "./components/buttons";
+@import "./components/heart";
+
 @import "./pages/index";
 
-@import "./components/buttons";

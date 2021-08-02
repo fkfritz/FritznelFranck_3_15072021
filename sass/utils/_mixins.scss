@@ -39,3 +39,62 @@
     transition: opacity 250ms;
   }
 }
+
+@mixin heart {
+  &__visible {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    &:hover + .heart__invisible {
+      animation: heart-full .5s linear both;
+      display: inline-block;
+      cursor: pointer;
+      background: linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-weight: bold;
+      background-repeat: no-repeat;
+    }
+    &:active + .heart__invisible {
+      animation: heart-full 0.5s linear both;
+      display: inline-block;
+      cursor: pointer;
+      background: linear-gradient($primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      font-weight: bold;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $primary-color;
+      background-image: linear-gradient(
+        15deg,
+        $secondary-color,
+        $primary-color
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  &__invisible {
+    position: relative;
+    color: #0000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    left: -32px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    transform-origin: 50% bottom;
+    transform: scale(1);
+    transition: transform 0.5s cubic-bezier(0.43, 0.21, 1, 0.45);
+  }
+}
