@@ -3,3 +3,37 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin origin-position {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@mixin btn {
+    margin: 20px 0;
+  padding: 15px 20px;
+  color: $color-white;
+  background: linear-gradient($primary-color, $secondary-color);
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 30px;
+    @include origin-position;
+    background: linear-gradient(lighten($primary-color, 25%), darken($secondary-color, 0%));
+    opacity: 0;
+    z-index: -1;
+    box-shadow: 0px 0px 4px 3px rgb(0 0 0 / 30%);
+    transition: opacity 250ms;
+  }
+    
+}
