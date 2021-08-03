@@ -296,4 +296,28 @@ body {
   font-size: 0.8rem;
 }
 
+footer {
+  padding: 40px 40px;
+  background-color: #333333;
+  color: #fff;
+}
+footer h4 {
+  padding-left: 40px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  font-family: "Shrikhand";
+}
+footer li {
+  margin: 10px 0;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #9356dc;
+}
+footer .fa-utensils {
+  margin-right: 7px;
+}
+
 /*# sourceMappingURL=style.css.map */

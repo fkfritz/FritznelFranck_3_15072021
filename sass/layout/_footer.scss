@@ -1,0 +1,24 @@
+footer {
+    padding: 40px 40px;
+    background-color: $footer-color;
+    color: $color-white;
+    & h4 {
+      padding-left: 40px;
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+  
+      font-family: "Shrikhand";
+    }
+    & li {
+      margin: 10px 0;
+    }
+    & a {
+      color: $color-white;
+      &:hover {
+        color: $primary-color;
+      }
+    }
+    & .fa-utensils {
+      margin-right: 7px;
+    }
+  }
