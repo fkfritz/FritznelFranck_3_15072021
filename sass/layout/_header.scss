@@ -6,6 +6,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &--fixed{
+        position: fixed;
+        width: 375px;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 4;
+    }
     &__link-back{
         position: absolute;
         left: 45px;
@@ -13,5 +21,5 @@
         &--visible{
             display: inline-block;
         }
-    }
+    }    
 }

@@ -21,6 +21,8 @@ li {
   list-style: none;
 }
 
+/*---- Les @keyframes -----*/
+/*--@keyframes pour animer les coeurs----*/
 @keyframes heart-full {
   0% {
     transform: scale(0);
@@ -32,6 +34,17 @@ li {
     transform: scale(1);
   }
 }
+/*--- @keyframes pour animer les listes de plats---*/
+@keyframes loading-list {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 /*----Style sur le header-----*/
 .header {
   height: 60px;
@@ -39,6 +52,14 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.header--fixed {
+  position: fixed;
+  width: 375px;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 4;
 }
 .header__link-back {
   position: absolute;
@@ -304,6 +325,150 @@ li {
   font-weight: bold;
   color: #2c9c81;
   font-size: 0.8rem;
+}
+
+.banner {
+  height: auto;
+  width: 375px;
+  object-fit: cover;
+  position: fixed;
+  z-index: -1;
+  top: 60px;
+}
+.banner.banner--position {
+  top: -60px;
+}
+
+.menu {
+  background-color: #f2f2f2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  margin-top: 265px;
+  box-sizing: border-box;
+}
+.menu__heading {
+  width: 100%;
+  margin: 15px 0;
+  position: relative;
+}
+.menu__heading--font {
+  font-family: "Shrikhand";
+  font-weight: 200;
+  font-size: 1.8rem;
+}
+.menu__heading .far {
+  font-size: 1.7rem;
+}
+.menu__heart--position {
+  top: 10px;
+  left: 35px;
+}
+.menu .heart__invisible {
+  left: 8px;
+}
+.menu .list {
+  width: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.menu .list__heading {
+  margin: 10px 0 10px 10px;
+}
+.menu .list__heading--font {
+  font-weight: initial;
+  font-size: 1rem;
+}
+.menu .list__heading--underline {
+  height: 2px;
+  width: 35px;
+  background-color: #99e2d0;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.menu .list__dish {
+  margin: 7px 0;
+  height: 70px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 5px 2px #aaaaaa;
+  box-shadow: 0px 0px 3px 1px #d3d3d3;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+}
+.menu .list__dish:nth-child(2) {
+  animation: 1s both loading-list;
+}
+.menu .list__dish:nth-child(3) {
+  animation: 1s 0.1s both loading-list;
+}
+.menu .list__dish:nth-child(4) {
+  animation: 1s 0.15s both loading-list;
+}
+.menu .list__dish:nth-child(5) {
+  animation: 1s 0.2s both loading-list;
+}
+.menu .list__dish--description {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.menu .list__dish--description h4 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.menu .list__dish--description p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.menu .list__dish--cost {
+  margin-top: 38px;
+  margin-right: 15px;
+  padding: 0 15px;
+}
+.menu .list__dish--check {
+  color: #fff;
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  background-color: #99e2d0;
+  justify-content: center;
+  align-items: center;
+  margin-right: -75px;
+  transition-duration: 0.7s;
+}
+.menu .list__dish:hover > .list__dish--check {
+  margin-right: -5px;
+}
+.menu .list__dish:hover {
+  cursor: pointer;
+}
+.menu .list__dish:hover .fa-check-circle {
+  transition: all 0.3s 0.3s;
+  transform: rotate(360deg);
+}
+.menu .list.starters, .menu .list.specials, .menu .list.dessert {
+  padding-bottom: 30px;
+}
+.menu__order {
+  padding: 15px 40px;
+  margin-bottom: 40px;
 }
 
 footer {
