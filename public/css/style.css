@@ -264,7 +264,7 @@ li {
   z-index: 10003;
   width: 100px;
   height: 100px;
-  top: 15%;
+  top: 250px;
   border: 3px solid transparent;
   border-top-color: #9356dc;
   border-radius: 50%;
@@ -279,9 +279,9 @@ li {
   content: "";
   position: absolute;
   z-index: 10003;
-  width: 85px;
-  height: 85px;
-  top: 15.4%;
+  width: 80px;
+  height: 80px;
+  top: 260px;
   border: 3px solid transparent;
   border-top-color: #99e2d0;
   border-radius: 50%;
@@ -296,9 +296,9 @@ li {
   content: "";
   position: absolute;
   z-index: 10003;
-  width: 70px;
-  height: 70px;
-  top: 15.7%;
+  width: 65px;
+  height: 65px;
+  top: 267px;
   border: 3px solid transparent;
   border-top-color: #ff79da;
   border-radius: 50%;
@@ -313,9 +313,9 @@ li {
   content: "";
   position: absolute;
   z-index: 10003;
-  width: 50px;
-  height: 50px;
-  top: 16.2%;
+  width: 45px;
+  height: 45px;
+  top: 277px;
   border: 3px solid transparent;
   border-radius: 50%;
   animation: loader-4 2.6s infinite alternate;
