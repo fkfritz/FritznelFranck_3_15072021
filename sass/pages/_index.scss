@@ -101,7 +101,15 @@
 
 #restaurant-box {
     background-color: $bcg-color;
-    padding: 20px 15px;  
+    padding: 20px 15px; 
+    & .restaurant-list{
+      @include tablet{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+    } 
     & .restaurant {
     margin: 20px 0;
     height: 250px;
@@ -111,6 +119,9 @@
     box-shadow: 0px 0px 3px 1px $color-white;
     border-radius: 20px;
     position: relative;
+    @include tablet{
+      width: 340px;
+    }
     & figure {
       margin: 0;
       height: 100%;

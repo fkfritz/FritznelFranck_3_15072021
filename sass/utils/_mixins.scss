@@ -98,3 +98,9 @@
     transition: transform 0.5s cubic-bezier(0.43, 0.21, 1, 0.45);
   }
 }
+
+@mixin tablet {
+  @media screen and (min-width: map-get($responsive, tablet)){
+      @content;
+  }
+}
