@@ -126,7 +126,8 @@ li {
 }
 .header--fixed {
   position: fixed;
-  width: 375px;
+  height: 60px;
+  width: 100%;
   top: 0;
   right: 0;
   left: 0;
@@ -486,8 +487,8 @@ li {
 }
 
 .banner {
-  height: auto;
-  width: 375px;
+  height: 280px;
+  width: 100%;
   object-fit: cover;
   position: fixed;
   z-index: -1;
