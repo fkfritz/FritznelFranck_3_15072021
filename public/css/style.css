@@ -61,44 +61,13 @@ li {
 @keyframes loader-4 {
   0% {
     background-color: #99e2d0;
+    transform: scale(1);
   }
-  90% {
-    transform: scale(0);
+  30% {
+    background-color: #9356dc;
   }
-  93% {
-    transform: scale(2);
-    border: 5px solid #ff79da;
+  65% {
     background-color: #ff79da;
-  }
-  94% {
-    transform: scale(1.5);
-    border: 5px solid #9356dc;
-    background-color: #9356dc;
-  }
-  95% {
-    transform: scale(2);
-    border: 5px solid #99e2d0;
-    background-color: #99e2d0;
-  }
-  96% {
-    transform: scale(1.5);
-    border: 5px solid #9356dc;
-    background-color: #9356dc;
-  }
-  97% {
-    transform: scale(6);
-    border: 5px solid #9356dc;
-    background-color: #9356dc;
-  }
-  98% {
-    transform: scale(1.5);
-    border: 5px solid #ff79da;
-    background-color: #ff79da;
-  }
-  99% {
-    transform: scale(4);
-    border: 5px solid #99e2d0;
-    background-color: #99e2d0;
   }
   100% {
     transform: scale(0);
@@ -108,12 +77,12 @@ li {
   0% {
     opacity: 1;
   }
-  95% {
-    opacity: 0.95;
+  90% {
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
-    z-index: -1;
+    z-index: -10;
   }
 }
 /*----Style sur le header-----*/
@@ -241,7 +210,7 @@ li {
   z-index: 10001;
   width: 100%;
   height: 100%;
-  animation: loader-0 3s ease-in-out both;
+  animation: loader-0 3s linear both;
 }
 
 .loading {
@@ -318,7 +287,7 @@ li {
   top: 277px;
   border: 3px solid transparent;
   border-radius: 50%;
-  animation: loader-4 2.6s infinite alternate;
+  animation: loader-4 0.5s infinite alternate;
 }
 
 /*-----Style sur le bloc localisation------*/
