@@ -1,14 +1,14 @@
 @mixin centering-elt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin origin-position {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 @mixin btn {
@@ -50,7 +50,7 @@
     z-index: 1;
 
     &:hover + .heart__invisible {
-      animation: heart-full .5s linear both;
+      animation: heart-full 0.5s linear both;
       display: inline-block;
       cursor: pointer;
       background: linear-gradient($primary-color, $secondary-color);
@@ -100,13 +100,13 @@
 }
 
 @mixin tablet {
-  @media screen and (min-width: map-get($responsive, tablet)){
-      @content;
+  @media screen and (min-width: map-get($responsive, tablet)) {
+    @content;
   }
 }
 
 @mixin desktop {
-  @media screen and (min-width: map-get($responsive, desktop)){
-      @content;
+  @media screen and (min-width: map-get($responsive, desktop)) {
+    @content;
   }
 }

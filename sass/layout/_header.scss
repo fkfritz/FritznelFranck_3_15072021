@@ -1,26 +1,26 @@
 /*----Style sur le header-----*/
 
-.header{
+.header {
+  height: 60px;
+  background-color: $color-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &--fixed {
+    position: fixed;
     height: 60px;
-    background-color: $color-white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &--fixed{
-        position: fixed;
-        height: 60px;
-        width: 100%;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 4;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 4;
+  }
+  &__link-back {
+    position: absolute;
+    left: 45px;
+    display: none;
+    &--visible {
+      display: inline-block;
     }
-    &__link-back{
-        position: absolute;
-        left: 45px;
-        display: none;
-        &--visible{
-            display: inline-block;
-        }
-    }    
+  }
 }

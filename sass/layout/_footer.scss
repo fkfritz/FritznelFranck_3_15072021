@@ -1,41 +1,40 @@
 footer {
-    padding: 40px 40px;
-    background-color: $footer-color;
-    color: $color-white;
-    @include tablet{
+  padding: 40px 40px;
+  background-color: $footer-color;
+  color: $color-white;
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  & h4 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-family: "Shrikhand";
+    font-weight: 200;
+  }
+  & ul {
+    @include tablet {
+      width: 90%;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
     }
-    & h4 {
-      
-      margin-bottom: 15px;
-      font-size: 1.3rem;  
-      font-family: "Shrikhand";
-      font-weight: 200;     
+    @include desktop {
+      width: 80%;
     }
-    & ul{
-      @include tablet{
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-      } 
-      @include desktop{
-        width: 80%;
-      }
-      & li {
+    & li {
       margin: 10px 0;
-      }
-    }
-   
-    & a {
-      color: $color-white;
-      &:hover {
-        color: $primary-color;
-      }
-    }
-    & .fa-utensils {
-      margin-right: 7px;
     }
   }
+
+  & a {
+    color: $color-white;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+  & .fa-utensils {
+    margin-right: 7px;
+  }
+}
