@@ -21,6 +21,9 @@ footer {
         flex-direction: row;
         justify-content: space-between;
       } 
+      @include desktop{
+        width: 80%;
+      }
       & li {
       margin: 10px 0;
       }
