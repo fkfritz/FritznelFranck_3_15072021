@@ -30,7 +30,7 @@
     border-radius: 30px;
     @include origin-position;
     background: linear-gradient(
-      lighten($primary-color, 25%),
+      lighten($primary-color, 20%),
       darken($secondary-color, 0%)
     );
     opacity: 0;
