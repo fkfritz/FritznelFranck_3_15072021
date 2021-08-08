@@ -485,6 +485,12 @@ li {
     margin: 15px 0;
   }
 }
+@media screen and (min-width: 1024px) {
+  #restaurant-box .restaurant {
+    width: 23.5%;
+    height: 220px;
+  }
+}
 #restaurant-box .restaurant figure {
   margin: 0;
   height: 100%;

@@ -148,6 +148,10 @@
       width: 47%;
       margin: 15px 0;
     }
+    @include desktop{
+      width: 23.5%;
+      height: 220px;
+    }
     & figure {
       margin: 0;
       height: 100%;
