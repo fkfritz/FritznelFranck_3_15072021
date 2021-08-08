@@ -4,10 +4,14 @@
   width: auto;
   display: flex;
   flex-direction: row;
-  left: 280px;
+  /*left: 280px;*/
+  right: 15px;
   bottom: 20px;
+  @include desktop{
+    right: -10px;
+  }
   & .far {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
   @include heart;
 }

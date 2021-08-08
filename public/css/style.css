@@ -145,11 +145,17 @@ li {
   width: auto;
   display: flex;
   flex-direction: row;
-  left: 280px;
+  /*left: 280px;*/
+  right: 15px;
   bottom: 20px;
 }
+@media screen and (min-width: 1024px) {
+  .heart {
+    right: -10px;
+  }
+}
 .heart .far {
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .heart__visible {
   position: relative;
@@ -192,8 +198,8 @@ li {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
-  left: -32px;
+  left: -27px;
+  /*left: -32px;*/
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
