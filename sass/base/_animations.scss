@@ -30,13 +30,13 @@
 
 @keyframes loader {
   to {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes loader-2 {
   to {
-    transform: rotate(-360deg);
+    transform: rotate(360deg);
   }
 }
 
