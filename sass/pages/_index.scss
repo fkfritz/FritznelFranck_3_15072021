@@ -122,6 +122,11 @@
 #restaurant-box {
   background-color: $bcg-color;
   padding: 20px 15px;
+  & h2{
+    @include tablet{
+      margin-bottom: 15px;
+    }
+  }
   & .restaurant-list {
     @include tablet {
       display: flex;
@@ -140,7 +145,8 @@
     border-radius: 20px;
     position: relative;
     @include tablet {
-      width: 340px;
+      width: 47%;
+      margin: 15px 0;
     }
     & figure {
       margin: 0;
@@ -148,8 +154,7 @@
       width: 100%;
       border-radius: 20px;
       position: relative;
-      & figcaption {
-        height: 30%;
+      & figcaption {        
         padding-right: 20px;
         padding-left: 20px;
         & h4 {
@@ -170,12 +175,18 @@
       border-radius: 20px 20px 0 0;
       object-fit: cover;
       object-position: center -50px;
+      @include tablet{
+        object-position: inherit;
+      }
       &--position {
         width: 100%;
         height: 70%;
         border-radius: 20px 20px 0 0;
         object-fit: cover;
         object-position: center -155px;
+        @include tablet{
+          object-position: center -130px;
+        }
       }
     }
     &__new {

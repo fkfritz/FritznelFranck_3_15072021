@@ -410,7 +410,7 @@ li {
 .operation-box .operation__step:hover > .fas {
   color: #9356dc;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   .operation-box .operation__step {
     width: 70%;
     height: 60px;
@@ -456,7 +456,12 @@ li {
   background-color: #f2f2f2;
   padding: 20px 15px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
+  #restaurant-box h2 {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (min-width: 702px) {
   #restaurant-box .restaurant-list {
     display: flex;
     flex-direction: row;
@@ -474,9 +479,10 @@ li {
   border-radius: 20px;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   #restaurant-box .restaurant {
-    width: 340px;
+    width: 47%;
+    margin: 15px 0;
   }
 }
 #restaurant-box .restaurant figure {
@@ -487,7 +493,6 @@ li {
   position: relative;
 }
 #restaurant-box .restaurant figure figcaption {
-  height: 30%;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -508,12 +513,22 @@ li {
   object-fit: cover;
   object-position: center -50px;
 }
+@media screen and (min-width: 702px) {
+  #restaurant-box .restaurant__img {
+    object-position: inherit;
+  }
+}
 #restaurant-box .restaurant__img--position {
   width: 100%;
   height: 70%;
   border-radius: 20px 20px 0 0;
   object-fit: cover;
   object-position: center -155px;
+}
+@media screen and (min-width: 702px) {
+  #restaurant-box .restaurant__img--position {
+    object-position: center -130px;
+  }
 }
 #restaurant-box .restaurant__new {
   position: absolute;
@@ -552,7 +567,7 @@ li {
   margin: 15px 0;
   position: relative;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   .menu__heading {
     display: flex;
     justify-content: center;
@@ -566,7 +581,7 @@ li {
 .menu__heading .far {
   font-size: 1.7rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   .menu__heart.heart {
     right: 80px;
     left: auto;
@@ -595,7 +610,7 @@ li {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   .menu .list {
     align-items: center;
   }
@@ -631,7 +646,7 @@ li {
   display: flex;
   overflow: hidden;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   .menu .list__dish {
     width: 90%;
   }
@@ -708,7 +723,7 @@ footer {
   background-color: #333333;
   color: #fff;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -721,7 +736,7 @@ footer h4 {
   font-family: "Shrikhand";
   font-weight: 200;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 702px) {
   footer ul {
     width: 90%;
     display: flex;
