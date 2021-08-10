@@ -182,7 +182,7 @@
       object-fit: cover;
       object-position: center -50px;
       @include tablet{
-        object-position: inherit;
+        object-position: initial;
       }
       &--position {
         width: 100%;
