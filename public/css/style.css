@@ -589,6 +589,7 @@ li {
   font-family: "Shrikhand";
   font-weight: 200;
   font-size: 1.8rem;
+  margin-left: 15px;
 }
 .menu__heading .far {
   font-size: 1.7rem;
