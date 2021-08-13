@@ -657,6 +657,7 @@ li {
   border-radius: 15px;
   display: flex;
   overflow: hidden;
+  animation: loading-list 0.8s both;
 }
 @media screen and (min-width: 702px) {
   .menu .list__dish {
@@ -664,16 +665,16 @@ li {
   }
 }
 .menu .list__dish:nth-child(2) {
-  animation: 1s both loading-list;
+  animation-delay: 0.2s;
 }
 .menu .list__dish:nth-child(3) {
-  animation: 1s 0.1s both loading-list;
+  animation-delay: 0.4s;
 }
 .menu .list__dish:nth-child(4) {
-  animation: 1s 0.15s both loading-list;
+  animation-delay: 0.6s;
 }
 .menu .list__dish:nth-child(5) {
-  animation: 1s 0.2s both loading-list;
+  animation-delay: 0.8s;
 }
 .menu .list__dish--description {
   padding: 5px;
