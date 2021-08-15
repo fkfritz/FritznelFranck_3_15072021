@@ -714,6 +714,9 @@ li {
   margin-right: -75px;
   transition-duration: 0.7s;
 }
+.menu .list__dish--check .fa-check-circle {
+  font-size: 1.5rem;
+}
 .menu .list__dish:hover > .list__dish--check {
   margin-right: -5px;
 }

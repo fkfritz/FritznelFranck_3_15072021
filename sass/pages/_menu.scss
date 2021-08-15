@@ -153,6 +153,9 @@
         align-items: center;
         margin-right: -75px;
         transition-duration: 0.7s;
+        & .fa-check-circle{
+          font-size: 1.5rem;
+        }
       }
 
       &:hover > .list__dish--check {
